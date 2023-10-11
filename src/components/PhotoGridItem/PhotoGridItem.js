@@ -50,11 +50,10 @@ const Image = styled.img`
 `;
 
 const Tags = styled.ul`
-  display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 100%;
+  padding: 4px 0;
 `;
 
 const Tag = styled.li`
@@ -64,10 +63,9 @@ const Tag = styled.li`
   font-size: 0.875rem;
   font-weight: 475;
   color: var(--color-gray-800);
-  margin-inline-end: 8px;
 
-  &:last-child {
-    margin-inline-end: 0px;
+  &:not(:last-child) {
+    margin-inline-end: 8px;
   }
 `;
 
